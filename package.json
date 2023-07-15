@@ -21,7 +21,11 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "test:cov": "react-scripts test --coverage --watchAll",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "lint": "eslint ./src --ext .tsx --ext .ts --max-warnings 0"
   },
   "eslintConfig": {
     "extends": [
