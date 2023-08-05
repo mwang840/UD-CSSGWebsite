@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./About.module.css";
-export function About() {
+
+export const About = (): JSX.Element => {
   return (
     <div>
       <h1 className={styles.title}>About the club</h1>
@@ -13,4 +14,4 @@ export function About() {
       </p>
     </div>
   );
-}
+};
