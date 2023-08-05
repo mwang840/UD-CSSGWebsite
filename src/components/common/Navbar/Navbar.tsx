@@ -1,7 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import "./NavBar.css";
-export function Navbar() {
+import "./Navbar.css";
+
+export const Navbar = () => {
   return (
     <div className="navbar-container">
       <NavLink
@@ -71,4 +72,4 @@ export function Navbar() {
       </NavLink>
     </div>
   );
-}
+};
