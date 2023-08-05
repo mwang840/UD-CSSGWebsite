@@ -1,19 +1,21 @@
 import React from "react";
-import logo from "./logo.svg";
+import cssg from "./components/assets/cs+sg.jpg";
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Navbar } from "./components/NavBar";
+import { About } from "./components/pages/About";
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
         <Navbar />
+        <img src={cssg} alt="Cs+Sg" width="300px" height="150px" />
         <Routes>
-          <Route path="about" />
+          <Route path="/" element={<About />} />
         </Routes>
       </BrowserRouter>
-      <header className="App-header">
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
@@ -26,7 +28,7 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </header> */}
     </div>
   );
 }
