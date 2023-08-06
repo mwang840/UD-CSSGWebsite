@@ -1,75 +1,56 @@
+"use client";
 import React from "react";
-import { NavLink } from "react-router-dom";
-import "./Navbar.css";
+import styles from "./Navbar.module.css";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+
+type NavbarProperties = {
+  currentLink: string;
+};
+
+enum NavbarPaths {
+  ABOUT = "/about",
+  EVENTS = "/events",
+  EBOARD = "/eboard",
+  FAQ = "/faq",
+  HOME = "/home",
+}
 
 export const Navbar = () => {
+  const path = usePathname();
+
   return (
-    <div className="navbar-container">
-      <NavLink
-        to="/home"
-        style={{
-          textDecoration: "none",
-          color: "black",
-          fontSize: "20px",
-          fontFamily: "Georgia",
-          borderRadius: "10px",
-          backgroundColor: "white",
-        }}
+    <div className={styles.navbar_container}>
+      <Link
+        className={path === NavbarPaths.HOME ? styles.active_link : ""}
+        href="/home"
       >
-        Home
-      </NavLink>
-      <NavLink
-        to="/about"
-        style={{
-          textDecoration: "none",
-          color: "black",
-          fontSize: "20px",
-          fontFamily: "Georgia",
-          borderRadius: "10px",
-          backgroundColor: "white",
-        }}
+        {"Home"}
+      </Link>
+      <Link
+        className={path === NavbarPaths.ABOUT ? styles.active_link : ""}
+        href="/about"
       >
-        About
-      </NavLink>
-      <NavLink
-        to="/events"
-        style={{
-          textDecoration: "none",
-          color: "black",
-          fontSize: "20px",
-          fontFamily: "Georgia",
-          borderRadius: "10px",
-          backgroundColor: "white",
-        }}
+        {"About"}
+      </Link>
+      <Link
+        className={path === NavbarPaths.EVENTS ? styles.active_link : ""}
+        href="/events"
       >
-        Events
-      </NavLink>
-      <NavLink
-        to="/eboard"
-        style={{
-          textDecoration: "none",
-          color: "black",
-          fontSize: "20px",
-          fontFamily: "Georgia",
-          borderRadius: "10px",
-          backgroundColor: "white",
-        }}
+        {"Events"}
+      </Link>
+      <Link
+        className={path === NavbarPaths.EBOARD ? styles.active_link : ""}
+        href="/eboard"
       >
-        Eboard
-      </NavLink>
-      <NavLink
-        to="/FAQ"
-        style={{
-          textDecoration: "none",
-          color: "black",
-          fontSize: "20px",
-          fontFamily: "Georgia",
-          borderRadius: "10px",
-          backgroundColor: "white",
-        }}
+        {"Eboard"}
+      </Link>
+      <Link
+        className={path === NavbarPaths.FAQ ? styles.active_link : ""}
+        href="/FAQ"
       >
-        FAQ
-      </NavLink>
+        {"FAQ"}
+      </Link>
     </div>
   );
 };

@@ -2,7 +2,7 @@ import React from "react";
 import cssg from "@/components/assets/cs+sg.jpg";
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { About } from "@/components/pages/About";
+import { About } from "@/components/modules/About";
 import { Navbar } from "@/components/common/Navbar";
 
 export const App = () => {
