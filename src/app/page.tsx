@@ -1,1 +1,1 @@
-export { App as default } from "@/modules/Landing";
+export { default } from "@/modules/Landing/Landing";
