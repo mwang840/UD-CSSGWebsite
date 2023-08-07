@@ -1,8 +1,1 @@
-import Image from "next/image";
-import styles from "./page.module.css";
-
-const Home = (): JSX.Element => {
-  return <div>{"Hello"}</div>;
-};
-
-export default Home;
+export { App as default } from "@/modules/Landing";

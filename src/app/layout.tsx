@@ -1,7 +1,8 @@
-import { Navbar } from "@/components/common/Navbar";
+import React from "react";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import styles from "./layout.module.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,7 +18,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body
+        className={`${inter.className} ${styles.layout_body}`}
+        id="landing_layout"
+      >
+        {children}
+      </body>
     </html>
   );
 }
