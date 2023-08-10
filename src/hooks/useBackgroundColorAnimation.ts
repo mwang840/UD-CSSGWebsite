@@ -35,7 +35,7 @@ type BGAnimations = BGAnimation[];
  * @param animations
  */
 const useBackgroundColorAnimation = (animations: BGAnimations): void => {
-    // eslint-disable-next-line no-undef -- disabled, built-in
+    // eslint-disable-next-line no-undef, no-unused-vars -- disabled, built-in
     const [intervalIds, setIntervalIds] = React.useState<NodeJS.Timer[]>();
 
     const intervalFunction = React.useCallback((animation: BGAnimation) => {
