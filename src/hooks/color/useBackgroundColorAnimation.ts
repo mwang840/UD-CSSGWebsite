@@ -1,44 +1,20 @@
 import React from "react";
 
-import { processColorRange } from "@/common";
+import type { BgAnimation } from "@/@types/animation";
+import { BgDirection } from "@/common/constants/enums";
+import { processColorRange } from "@/common/helper/color";
 
-// eslint-disable-next-line no-unused-vars, no-shadow -- disabled
-enum BGDirection {
-    // eslint-disable-next-line no-unused-vars -- disabled
-    LEFT = 0,
-    // eslint-disable-next-line no-unused-vars -- disabled
-    RIGHT = 1,
-    // eslint-disable-next-line no-unused-vars -- disabled
-    RANDOM = 2,
-}
-
-type BGColor = {
-    red: number;
-    blue: number;
-    green: number;
-    opacity: number;
-};
-
-type BGAnimation = {
-    colors?: BGColor[];
-    colorCount?: number;
-    cssQuerySelector: string;
-    direction?: BGDirection;
-    intervalTime?: number;
-    randomizeColors?: boolean;
-};
-
-type BGAnimations = BGAnimation[];
+type BGAnimations = BgAnimation[];
 
 /**
  *
  * @param animations
  */
-const useBackgroundColorAnimation = (animations: BGAnimations): void => {
+export const useBackgroundColorAnimation = (animations: BGAnimations): void => {
     // eslint-disable-next-line no-undef, no-unused-vars -- disabled, built-in
     const [intervalIds, setIntervalIds] = React.useState<NodeJS.Timer[]>();
 
-    const intervalFunction = React.useCallback((animation: BGAnimation) => {
+    const intervalFunction = React.useCallback((animation: BgAnimation) => {
         if (animation.randomizeColors ?? true) {
             const seedRed = Math.floor(Math.random() * 255);
             const seedBlue = Math.floor(Math.random() * 255);
@@ -62,7 +38,7 @@ const useBackgroundColorAnimation = (animations: BGAnimations): void => {
                 const convertedElement = foundElement as HTMLElement;
                 const colorArray = processColorRange(
                     animation.colors,
-                    animation.direction ?? BGDirection.RANDOM,
+                    animation.direction ?? BgDirection.RANDOM,
                 );
                 for (const eachColor of colorArray) {
                     convertedElement.style.backgroundColor = `rgba(${eachColor.red}, ${eachColor.green}, ${eachColor.blue}, ${eachColor.opacity})`;
@@ -116,5 +92,3 @@ const useBackgroundColorAnimation = (animations: BGAnimations): void => {
         };
     }, [processAnimations]);
 };
-
-export { type BGColor, BGDirection, useBackgroundColorAnimation };

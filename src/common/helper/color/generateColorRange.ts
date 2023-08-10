@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/indent -- disabled */
-import { BGDirection } from "@/hooks";
+
+import { BgDirection } from "@/common/constants/enums";
 
 /**
  * Generates a color range dependent on the color supplied, the number of colors to generate, and the direction upon which we are generating the color array
@@ -12,14 +13,14 @@ import { BGDirection } from "@/hooks";
 export const generateColorRange = (
     color: number,
     colorCount: number,
-    direction: BGDirection,
+    direction: BgDirection,
 ): number[] => {
     const colors = [color];
     let colorValue = color;
     while (colors.length < colorCount) {
-        if (colorValue === 0 && direction === BGDirection.LEFT) {
+        if (colorValue === 0 && direction === BgDirection.LEFT) {
             colorValue = 255;
-        } else if (colorValue === 255 && direction === BGDirection.RIGHT) {
+        } else if (colorValue === 255 && direction === BgDirection.RIGHT) {
             colorValue = 0;
         } else {
             const randomValue = Math.floor(Math.random() * 2);
@@ -28,9 +29,9 @@ export const generateColorRange = (
                 colorValue = 255;
             } else {
                 const changingColorValue =
-                    direction === BGDirection.LEFT
+                    direction === BgDirection.LEFT
                         ? 1
-                        : direction === BGDirection.RIGHT
+                        : direction === BgDirection.RIGHT
                         ? -1
                         : Math.floor(Math.random() * 2);
                 colorValue -= changingColorValue;

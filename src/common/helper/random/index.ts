@@ -1,0 +1,1 @@
+export { generateRandomPercent } from "./generateRandomPercent";

@@ -4,19 +4,17 @@ import { Button, OverlayTrigger } from "react-bootstrap";
 import type { OverlayInjectedProps } from "react-bootstrap/esm/Overlay";
 
 import _cssg from "@/assets/cs+sg.jpg";
-import { generatePopover } from "@/common";
-import { useBackgroundColorAnimation } from "@/hooks";
+import { generatePopover } from "@/common/helper/popover/generatePopover";
 
 import styles from "./Landing.module.css";
+import { useBackgroundLinearGradientAnimation } from "@/hooks/color";
 
 /**
  *
  * @returns
  */
 const Landing = (): JSX.Element => {
-    const animations = React.useMemo(() => [{ cssQuerySelector: "body" }], []);
-    useBackgroundColorAnimation(animations);
-
+    useBackgroundLinearGradientAnimation();
     return (
         <div className={styles.landing_container}>
             <div className={styles.landing_header}>

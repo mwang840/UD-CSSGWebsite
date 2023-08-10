@@ -1,4 +1,5 @@
-import { type BGColor, BGDirection } from "@/hooks";
+import type { BgColor } from "@/@types/color";
+import { BgDirection } from "@/common/constants/enums";
 
 /**
  *
@@ -6,12 +7,12 @@ import { type BGColor, BGDirection } from "@/hooks";
  * @param direction
  */
 export const processColorRange = (
-    colors: BGColor[],
-    direction: BGDirection,
-): BGColor[] => {
-    if (direction === BGDirection.LEFT) {
+    colors: BgColor[],
+    direction: BgDirection,
+): BgColor[] => {
+    if (direction === BgDirection.LEFT) {
         return colors.reverse();
-    } else if (direction === BGDirection.RIGHT) {
+    } else if (direction === BgDirection.RIGHT) {
         return colors;
     }
     const randomizedColors = [];
