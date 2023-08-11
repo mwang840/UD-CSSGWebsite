@@ -1,5 +1,4 @@
 /* eslint-disable no-mixed-operators -- disabled */
-/* eslint-disable no-confusing-arrow -- disabled */
 /**
  * Generates a random percent from 0 to 100
  *

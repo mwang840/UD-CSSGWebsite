@@ -1,3 +1,4 @@
+/* eslint-disable unicorn/filename-case -- disabled */
 "use client";
 
 import React from "react";
@@ -20,9 +21,13 @@ type GlobalErrorProperties = {
  * @param param0
  * @returns
  */
-const GlobalError = ({ error, reset }: GlobalErrorProperties): JSX.Element => {
+const GlobalError = ({
+    error,
+    reset: _reset,
+}: GlobalErrorProperties): JSX.Element => {
     React.useEffect(() => {
-        console.log(error);
+        // eslint-disable-next-line no-console -- disabled
+        console.error(error);
     }, [error]);
 
     return <div>{"Something went wrong"}</div>;
