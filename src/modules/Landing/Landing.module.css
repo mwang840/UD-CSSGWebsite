@@ -63,7 +63,7 @@
     width: 100%;
 }
 
-.options_bar > button {
+.options_bar > a {
     width: 100%;
 }
 
@@ -77,4 +77,8 @@
     animation:
         5s 3s appear_anim ease-in-out forwards,
         1s 5s interactive_anim linear forwards;
+}
+
+.landing_page_button > button {
+    width: 100%;
 }
