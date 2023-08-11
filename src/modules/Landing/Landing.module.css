@@ -16,12 +16,35 @@
     }
 }
 
+@keyframes interactive_anim {
+    from {
+        pointer-events: none;
+    }
+    to {
+        pointer-events: all;
+    }
+}
+
 .landing_header {
     font-size: 2em;
     animation:
         2.5s float_from_above_anim ease-in-out forwards,
         5s appear_anim ease-in-out forwards;
     align-self: center;
+    color: rgba(255, 255, 255, 0.95);
+    font-weight: bold;
+    letter-spacing: 0.02em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.landing_club_logo {
+    width: 5.5vw;
+    height: 5.5vw;
+    border-radius: 100%;
+    border: 0.25vw solid rgba(255, 255, 255, 0.85);
 }
 
 .landing_container {
@@ -45,10 +68,13 @@
 }
 
 .landing_page_button {
+    pointer-events: none;
     opacity: 0%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    animation: 5s 3s appear_anim ease-in-out forwards;
+    animation:
+        5s 3s appear_anim ease-in-out forwards,
+        1s 5s interactive_anim linear forwards;
 }
