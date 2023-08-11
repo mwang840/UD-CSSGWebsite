@@ -34,10 +34,24 @@ export const SignUpForm = (): JSX.Element => {
         reValidateMode: "onBlur",
     });
 
-    const { isValid, isValidating } = formState;
+    const { dirtyFields, isValid, isValidating } = formState;
 
     return (
-        <div className={styles.sign_up_form_container}>
+        <div
+            className={`${styles.sign_up_form_container} ${
+                Object.keys(dirtyFields).length > 0 &&
+                styles.sign_up_form_container_25
+            } ${
+                Object.keys(dirtyFields).length > 1 &&
+                styles.sign_up_form_container_50
+            } ${
+                Object.keys(dirtyFields).length > 2 &&
+                styles.sign_up_form_container_75
+            } ${
+                Object.keys(dirtyFields).length > 3 &&
+                styles.sign_up_form_container_100
+            }`}
+        >
             <Form.Control
                 className={styles.signup_form}
                 {...register("username", { required: true })}
