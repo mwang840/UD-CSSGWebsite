@@ -10,7 +10,8 @@
         "plugin:sonarjs/recommended",
         "plugin:unicorn/recommended",
         "next/core-web-vitals",
-        "problems"
+        "problems",
+        "next"
     ],
     "globals": {
         "JSX": true

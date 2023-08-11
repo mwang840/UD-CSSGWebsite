@@ -1,6 +1,20 @@
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 body {
-  width: 100vw;
-  height: 100vh;
-  margin: 0;
-  font-family: inherit;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    font-family: inherit;
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400% !important;
 }
