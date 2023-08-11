@@ -1,5 +1,5 @@
 import React from "react";
-import cssg from "@/components/assets/cs+sg.jpg";
+import cssg from "@/assets/csSgLogo.jpg";
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { About } from "@/components/modules/About";
