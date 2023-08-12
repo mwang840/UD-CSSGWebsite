@@ -4,6 +4,7 @@ import Link from "next/link";
 import React from "react";
 import { OverlayTrigger } from "react-bootstrap";
 import type { OverlayInjectedProps } from "react-bootstrap/esm/Overlay";
+import { useIntl } from "react-intl";
 
 import _cssg from "@/assets/cs+sg.jpg";
 import CSSGLogo from "@/assets/cssg1.png";
@@ -19,6 +20,8 @@ import styles from "./Landing.module.css";
  */
 const Landing = (): JSX.Element => {
     useBackgroundLinearGradientAnimation();
+    const intl = useIntl();
+
     return (
         <div className={styles.landing_container}>
             <div className={styles.landing_header}>
@@ -29,12 +32,15 @@ const Landing = (): JSX.Element => {
                     src={CSSGLogo.src}
                     width={500}
                 />
-                {"Welcome to UD CS + Social Good!"}
+                {intl.formatMessage({ id: "welcomeMessage" })}
             </div>
             <div className={styles.options_bar}>
                 <OverlayTrigger
                     overlay={(properties: OverlayInjectedProps): JSX.Element =>
-                        generateTooltip(properties, "Login")
+                        generateTooltip(
+                            properties,
+                            intl.formatMessage({ id: "loginTooltip" }),
+                        )
                     }
                     placement="bottom"
                 >
@@ -47,7 +53,10 @@ const Landing = (): JSX.Element => {
                 </OverlayTrigger>
                 <OverlayTrigger
                     overlay={(properties: OverlayInjectedProps): JSX.Element =>
-                        generateTooltip(properties, "Sign Up")
+                        generateTooltip(
+                            properties,
+                            intl.formatMessage({ id: "signUpTooltip" }),
+                        )
                     }
                     placement="bottom"
                 >
@@ -60,7 +69,10 @@ const Landing = (): JSX.Element => {
                 </OverlayTrigger>
                 <OverlayTrigger
                     overlay={(properties: OverlayInjectedProps): JSX.Element =>
-                        generateTooltip(properties, "Home Page")
+                        generateTooltip(
+                            properties,
+                            intl.formatMessage({ id: "homePageTooltip" }),
+                        )
                     }
                     placement="bottom"
                 >

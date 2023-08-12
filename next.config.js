@@ -4,6 +4,9 @@ const nextConfig = {
         defaultLocale: "en-US",
         locales: ["en-US", "fr", "es"],
     },
+    experimental: {
+        forceSwcTransforms: true,
+    },
 };
 
 module.exports = nextConfig;
