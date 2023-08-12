@@ -38,10 +38,11 @@ const Landing = (): JSX.Element => {
                     }
                     placement="bottom"
                 >
-                    <Link className={styles.landing_page_button} href="login">
-                        <Button variant="primary">
-                            <i className="fa-solid fa-door-open" />
-                        </Button>
+                    <Link
+                        className={`${styles.landing_page_button} ${styles.landing_page_login}`}
+                        href="login"
+                    >
+                        <i className="fa-solid fa-door-open" />
                     </Link>
                 </OverlayTrigger>
                 <OverlayTrigger
@@ -50,10 +51,11 @@ const Landing = (): JSX.Element => {
                     }
                     placement="bottom"
                 >
-                    <Link className={styles.landing_page_button} href="signup">
-                        <Button variant="secondary">
-                            <i className="fa-solid fa-user-plus" />
-                        </Button>
+                    <Link
+                        className={`${styles.landing_page_button} ${styles.landing_page_signup}`}
+                        href="signup"
+                    >
+                        <i className="fa-solid fa-user-plus" />
                     </Link>
                 </OverlayTrigger>
             </div>
