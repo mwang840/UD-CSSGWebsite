@@ -12,7 +12,7 @@
     "install-linter": "npm i --save-dev eslint-plugin-jest eslint-config-problems eslint-config-intense eslint-config-prettier eslint-plugin-eslint-comments eslint-plugin-import eslint-plugin-no-secrets eslint-plugin-node eslint-plugin-prettier eslint-plugin-ramda eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-simple-import-sort eslint-plugin-sonarjs eslint-plugin-unicorn prettier prettier-eslint @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint eslint-config-next"
   },
   "dependencies": {
-    "babel-plugin-formatjs": "^10.5.3",
+    "@formatjs/swc-plugin": "^1.5.3",
     "next": "^13.4.13",
     "react": "18.2.0",
     "react-bootstrap": "^2.8.0",

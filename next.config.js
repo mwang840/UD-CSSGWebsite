@@ -5,7 +5,7 @@ const nextConfig = {
         locales: ["en-US", "fr-FR", "es-ES"],
     },
     experimental: {
-        forceSwcTransforms: true,
+        swcPlugins: ["@formatjs/swc-plugin"],
     },
 };
 

@@ -11,7 +11,7 @@ import { messages } from "@/i18n/messages";
  */
 export const CSSGIntlProvider = ({
     children,
-}: React.PropsWithChildren): JSX.Element => {
+}: React.PropsWithChildren): JSX.Element | undefined => {
     const [language, setLanguage] = React.useState<string>();
 
     React.useEffect(() => {
@@ -21,7 +21,7 @@ export const CSSGIntlProvider = ({
     }, []);
 
     if (language === undefined) {
-        return <div>{children}</div>;
+        return undefined;
     }
 
     return (
