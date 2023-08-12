@@ -2,6 +2,7 @@
 import React from "react";
 
 import { useCSSInjection } from "@/hooks/injection";
+import { CssgFormatMessage } from "@/lib/react-intl";
 
 import styles from "./Cssg.module.css";
 
@@ -15,7 +16,9 @@ const CSSG = (): JSX.Element => {
     return (
         <div className={styles.cssg_container}>
             <div className={styles.cssg_header}>{"Welcome to CS+SG!"}</div>
-            <div className={styles.cssg_description}></div>
+            <div className={styles.cssg_description}>
+                <CssgFormatMessage id="cssgDescription" />
+            </div>
         </div>
     );
 };

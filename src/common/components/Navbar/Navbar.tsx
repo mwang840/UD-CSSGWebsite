@@ -13,9 +13,10 @@ type NavbarProperties = {
 };
 
 /**
+ * The common navigation bar component, controls all the base navigation at the top of the page
  *
- * @param param0
- * @returns
+ * @param props - The properties of the Navbar component, comes with an override that allows for custom styles to be applied to the Navbar
+ * @returns The customized Navbar, which displays links to all pages available
  */
 export const Navbar = ({ cssOverride }: NavbarProperties): JSX.Element => {
     const path = usePathname();
@@ -24,14 +25,14 @@ export const Navbar = ({ cssOverride }: NavbarProperties): JSX.Element => {
         <div className={`${styles.navbar_container} ${cssOverride}`}>
             <Link
                 className={path === NavbarPaths.HOME ? styles.active_link : ""}
-                href={NavbarPaths.HOME}
+                href={`${path}/${NavbarPaths.HOME}`}
             >
                 {"Home"}
             </Link>
             <Divider />
             <Link
                 className={path === NavbarPaths.ABOUT ? styles.active_link : ""}
-                href={NavbarPaths.ABOUT}
+                href={`${path}/${NavbarPaths.ABOUT}`}
             >
                 {"About"}
             </Link>
@@ -40,7 +41,7 @@ export const Navbar = ({ cssOverride }: NavbarProperties): JSX.Element => {
                 className={
                     path === NavbarPaths.EVENTS ? styles.active_link : ""
                 }
-                href={NavbarPaths.EVENTS}
+                href={`${path}/${NavbarPaths.EVENTS}`}
             >
                 {"Events"}
             </Link>
@@ -49,14 +50,14 @@ export const Navbar = ({ cssOverride }: NavbarProperties): JSX.Element => {
                 className={
                     path === NavbarPaths.EBOARD ? styles.active_link : ""
                 }
-                href={NavbarPaths.EBOARD}
+                href={`${path}/${NavbarPaths.EBOARD}`}
             >
                 {"Eboard"}
             </Link>
             <Divider />
             <Link
                 className={path === NavbarPaths.FAQ ? styles.active_link : ""}
-                href={NavbarPaths.FAQ}
+                href={`${path}/${NavbarPaths.FAQ}`}
             >
                 {"FAQ"}
             </Link>
