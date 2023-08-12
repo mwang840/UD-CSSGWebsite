@@ -97,3 +97,7 @@
 .landing_page_signup {
     background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
 }
+
+.landing_page_to_home_page {
+    background: linear-gradient(90deg, #0700b8 0%, #00ff88 100%);
+}

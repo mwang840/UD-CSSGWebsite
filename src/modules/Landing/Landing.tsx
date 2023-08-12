@@ -58,6 +58,19 @@ const Landing = (): JSX.Element => {
                         <i className="fa-solid fa-user-plus" />
                     </Link>
                 </OverlayTrigger>
+                <OverlayTrigger
+                    overlay={(properties: OverlayInjectedProps): JSX.Element =>
+                        generateTooltip(properties, "Home Page")
+                    }
+                    placement="bottom"
+                >
+                    <Link
+                        className={`${styles.landing_page_button} ${styles.landing_page_to_home_page}`}
+                        href="home"
+                    >
+                        <i className="fa-solid fa-arrow-up" />
+                    </Link>
+                </OverlayTrigger>
             </div>
         </div>
     );
