@@ -2,6 +2,7 @@
 import React from "react";
 import { Button, Form } from "react-bootstrap";
 import { useForm } from "react-hook-form";
+import { useIntl } from "react-intl";
 
 import { useBackgroundLinearGradientAnimation } from "@/hooks/color";
 
@@ -27,6 +28,8 @@ const SIGN_UP_DEFAULT_FORM_VALUES: SignUpFormValues = {
  */
 export const SignUpForm = (): JSX.Element => {
     useBackgroundLinearGradientAnimation();
+    const intl = useIntl();
+
     const { formState, register } = useForm<SignUpFormValues>({
         criteriaMode: "all",
         defaultValues: SIGN_UP_DEFAULT_FORM_VALUES,
@@ -55,23 +58,23 @@ export const SignUpForm = (): JSX.Element => {
             <Form.Control
                 className={styles.signup_form}
                 {...register("username", { required: true })}
-                placeholder="Username"
+                placeholder={intl.formatMessage({ id: "username" })}
             />
             <Form.Control
                 className={styles.signup_form}
                 {...register("email", { required: true })}
-                placeholder="Email"
+                placeholder={intl.formatMessage({ id: "email" })}
             />
             <Form.Control
                 className={styles.signup_form}
                 {...register("password", { required: true })}
-                placeholder="Password"
+                placeholder={intl.formatMessage({ id: "password" })}
                 type="password"
             />
             <Form.Control
                 className={styles.signup_form}
                 {...register("confirmPassword", { required: true })}
-                placeholder="Confirm Password"
+                placeholder={intl.formatMessage({ id: "confirmPassword" })}
                 type="password"
             />
             <Button
