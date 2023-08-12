@@ -1,7 +1,8 @@
 import React from "react";
 
-import styles from "./layout.module.css";
 import { Navbar } from "@/common/components/Navbar";
+
+import styles from "./layout.module.css";
 
 /**
  *
@@ -9,11 +10,9 @@ import { Navbar } from "@/common/components/Navbar";
  * @returns
  */
 const CSSGLayout = ({ children }: React.PropsWithChildren): JSX.Element => (
-    <div>
-        <header>
-            <Navbar />
-        </header>
-        {children}
+    <div className={styles.cssg_layout}>
+        <Navbar cssOverride={styles.cssg_navbar} />
+        <div className={styles.cssg_content}>{children}</div>
     </div>
 );
 

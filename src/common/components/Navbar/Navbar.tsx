@@ -8,6 +8,7 @@ import { NavbarPaths } from "@/common/constants/enums";
 import styles from "./Navbar.module.css";
 
 type NavbarProperties = {
+    readonly cssOverride?: string;
     readonly currentLink?: string;
 };
 
@@ -17,12 +18,13 @@ type NavbarProperties = {
  * @returns
  */
 export const Navbar = ({
+    cssOverride,
     currentLink: _currentLink,
 }: NavbarProperties): JSX.Element => {
     const path = usePathname();
 
     return (
-        <div className={styles.navbar_container}>
+        <div className={`${styles.navbar_container} ${cssOverride}`}>
             <Link
                 className={path === NavbarPaths.HOME ? styles.active_link : ""}
                 href={NavbarPaths.HOME}
