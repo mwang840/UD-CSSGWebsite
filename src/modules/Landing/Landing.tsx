@@ -7,7 +7,7 @@ import type { OverlayInjectedProps } from "react-bootstrap/esm/Overlay";
 import { useIntl } from "react-intl";
 
 import _cssg from "@/assets/cs+sg.jpg";
-import CSSGLogo from "@/assets/cssg1.png";
+import CSSGLogo from "@/assets/imgs/png/cssg1.png";
 import { generateTooltip } from "@/common/helper/tooltip";
 import { useBackgroundLinearGradientAnimation } from "@/hooks/color";
 

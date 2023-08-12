@@ -4,6 +4,7 @@ import { usePathname } from "next/navigation";
 import React from "react";
 
 import { NavbarPaths } from "@/common/constants/enums";
+import { CssgFormatMessage } from "@/lib/react-intl";
 
 import { Divider } from "../Divider";
 import styles from "./Navbar.module.css";
@@ -27,14 +28,14 @@ export const Navbar = ({ cssOverride }: NavbarProperties): JSX.Element => {
                 className={path === NavbarPaths.HOME ? styles.active_link : ""}
                 href={`${path}/${NavbarPaths.HOME}`}
             >
-                {"Home"}
+                <CssgFormatMessage id="home" />
             </Link>
             <Divider />
             <Link
                 className={path === NavbarPaths.ABOUT ? styles.active_link : ""}
                 href={`${path}/${NavbarPaths.ABOUT}`}
             >
-                {"About"}
+                <CssgFormatMessage id="about" />
             </Link>
             <Divider />
             <Link
@@ -43,7 +44,7 @@ export const Navbar = ({ cssOverride }: NavbarProperties): JSX.Element => {
                 }
                 href={`${path}/${NavbarPaths.EVENTS}`}
             >
-                {"Events"}
+                <CssgFormatMessage id="events" />
             </Link>
             <Divider />
             <Link
@@ -52,14 +53,14 @@ export const Navbar = ({ cssOverride }: NavbarProperties): JSX.Element => {
                 }
                 href={`${path}/${NavbarPaths.EBOARD}`}
             >
-                {"Eboard"}
+                <CssgFormatMessage id="eboard" />
             </Link>
             <Divider />
             <Link
                 className={path === NavbarPaths.FAQ ? styles.active_link : ""}
                 href={`${path}/${NavbarPaths.FAQ}`}
             >
-                {"FAQ"}
+                <CssgFormatMessage id="faq" />
             </Link>
         </div>
     );

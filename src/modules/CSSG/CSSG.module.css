@@ -14,8 +14,28 @@
     text-decoration: underline;
 }
 
+.cssg_footer {
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    align-items: center;
+}
+
 .cssg_description {
-    padding-right: 25%;
-    padding-left: 25%;
     font-size: 1.5em;
+}
+
+.cssg_home_img {
+    width: 17vw;
+    height: 17vw;
+    border-radius: 100%;
+    border: 0.35em inset rgba(0, 0, 0, 0.95);
+}
+
+.cssg_home_img_left {
+    margin-left: 5%;
+}
+
+.cssg_home_img_right {
+    margin-right: 5%;
 }
