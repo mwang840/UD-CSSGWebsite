@@ -1,5 +1,7 @@
 import React from "react";
 
+import { CssgFormatMessage } from "@/lib/react-intl";
+
 import styles from "./Login.module.css";
 import { LoginForm } from "./LoginForm";
 
@@ -9,7 +11,9 @@ import { LoginForm } from "./LoginForm";
  */
 const Login = (): JSX.Element => (
     <div className={styles.login_page_container}>
-        <div className={styles.login_page_header}>{"Login to CS+SG"}</div>
+        <div className={styles.login_page_header}>
+            <CssgFormatMessage id="loginHeader" />
+        </div>
         <LoginForm />
     </div>
 );

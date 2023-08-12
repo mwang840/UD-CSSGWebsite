@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 import { Quicksand } from "next/font/google";
 import React from "react";
 
-import { CSSGIntlProvider } from "@/lib/react-intl/CssgIntlProvider";
+import { CssgIntlProvider } from "@/lib/react-intl/CssgIntlProvider";
 
 import styles from "./layout.module.css";
 
@@ -34,7 +34,7 @@ const RootLayout = ({ children }: React.PropsWithChildren): JSX.Element => (
             className={`${quicksand.className} ${styles.layout_body}`}
             id="landing_layout"
         >
-            <CSSGIntlProvider>{children}</CSSGIntlProvider>
+            <CssgIntlProvider>{children}</CssgIntlProvider>
         </body>
     </html>
 );

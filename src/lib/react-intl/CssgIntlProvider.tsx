@@ -9,7 +9,7 @@ import { messages } from "@/i18n/messages";
  * @param param0
  * @returns
  */
-export const CSSGIntlProvider = ({
+export const CssgIntlProvider = ({
     children,
 }: React.PropsWithChildren): JSX.Element | undefined => {
     const [language, setLanguage] = React.useState<string>();
