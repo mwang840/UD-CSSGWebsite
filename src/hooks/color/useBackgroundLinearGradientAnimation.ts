@@ -35,7 +35,9 @@ export const useBackgroundLinearGradientAnimation = (): void => {
             if (document !== undefined) {
                 const body = document.querySelector("body");
                 if (body !== null) {
-                    body.style.transition = "";
+                    body.style.background = "";
+                    body.style.animation = "";
+                    body.style.backgroundSize = "";
                 }
             }
         };
