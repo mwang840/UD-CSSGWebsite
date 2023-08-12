@@ -66,7 +66,7 @@ const Landing = (): JSX.Element => {
                 >
                     <Link
                         className={`${styles.landing_page_button} ${styles.landing_page_to_home_page}`}
-                        href="home"
+                        href="cssg"
                     >
                         <i className="fa-solid fa-arrow-up" />
                     </Link>

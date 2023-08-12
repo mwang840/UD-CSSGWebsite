@@ -25,13 +25,13 @@ export const Navbar = ({
         <div className={styles.navbar_container}>
             <Link
                 className={path === NavbarPaths.HOME ? styles.active_link : ""}
-                href="/home"
+                href={NavbarPaths.HOME}
             >
                 {"Home"}
             </Link>
             <Link
                 className={path === NavbarPaths.ABOUT ? styles.active_link : ""}
-                href="/about"
+                href={NavbarPaths.ABOUT}
             >
                 {"About"}
             </Link>
@@ -39,7 +39,7 @@ export const Navbar = ({
                 className={
                     path === NavbarPaths.EVENTS ? styles.active_link : ""
                 }
-                href="/events"
+                href={NavbarPaths.EVENTS}
             >
                 {"Events"}
             </Link>
@@ -47,13 +47,13 @@ export const Navbar = ({
                 className={
                     path === NavbarPaths.EBOARD ? styles.active_link : ""
                 }
-                href="/eboard"
+                href={NavbarPaths.EBOARD}
             >
                 {"Eboard"}
             </Link>
             <Link
                 className={path === NavbarPaths.FAQ ? styles.active_link : ""}
-                href="/FAQ"
+                href={NavbarPaths.FAQ}
             >
                 {"FAQ"}
             </Link>
