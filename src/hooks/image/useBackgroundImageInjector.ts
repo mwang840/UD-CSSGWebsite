@@ -11,7 +11,8 @@ export const useBackgroundImageInjector = (imageSource: string): void => {
             const body = document.querySelector("body");
             if (body !== null) {
                 const convertedElement = body as HTMLElement;
-                convertedElement.style.background = `url('${imageSource}')`;
+                convertedElement.style.backgroundImage = `url('${imageSource}')`;
+                convertedElement.style.backgroundSize = "cover";
             }
         }
     }, [imageSource]);

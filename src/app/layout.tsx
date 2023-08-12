@@ -3,12 +3,12 @@
 import "./globals.css";
 
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Quicksand } from "next/font/google";
 import React from "react";
 
 import styles from "./layout.module.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const quicksand = Quicksand({ subsets: ["latin"] });
 
 /**
  *
@@ -28,19 +28,9 @@ const RootLayout = ({ children }: React.PropsWithChildren): JSX.Element => (
                 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
                 rel="stylesheet"
             />
-            <link href="https://fonts.googleapis.com" rel="preconnect" />
-            <link
-                crossOrigin=""
-                href="https://fonts.gstatic.com"
-                rel="preconnect"
-            />
-            <link
-                href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@500&family=Golos+Text&family=Oswald:wght@300&family=Radio+Canada&family=Zeyada&display=swap"
-                rel="stylesheet"
-            />
         </head>
         <body
-            className={`${inter.className} ${styles.layout_body}`}
+            className={`${quicksand.className} ${styles.layout_body}`}
             id="landing_layout"
         >
             {children}

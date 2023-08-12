@@ -33,6 +33,7 @@ export const useCSSInjection = (queries: Query[]): void => {
                         )[eachStyle as unknown as number];
                     }
                 }
+
                 if (className !== undefined) {
                     foundElement.className += ` ${className}`;
                 }
