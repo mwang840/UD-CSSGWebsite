@@ -33,5 +33,5 @@
 .active_link {
     pointer-events: none;
     color: rgba(0, 0, 0, 0.5) !important;
-    text-decoration: underline;
+    text-decoration: underline !important;
 }

@@ -15,6 +15,4 @@ body {
     height: 100vh;
     margin: 0;
     font-family: inherit;
-    animation: gradient 15s ease infinite;
-    background-size: 400% 400% !important;
 }
