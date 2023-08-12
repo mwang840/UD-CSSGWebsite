@@ -2,7 +2,7 @@
 const nextConfig = {
     i18n: {
         defaultLocale: "en-US",
-        locales: ["en-US", "fr", "es"],
+        locales: ["en-US", "fr-FR", "es-ES"],
     },
     experimental: {
         forceSwcTransforms: true,
