@@ -1,8 +1,9 @@
 import React from "react";
 
+import { CssgFormatMessage } from "@/lib/react-intl";
+
 import styles from "./SignUp.module.css";
 import { SignUpForm } from "./SignUpForm/SignUpForm";
-import { CssgFormatMessage } from "@/lib/react-intl";
 
 /**
  *
