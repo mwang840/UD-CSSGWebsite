@@ -2,11 +2,11 @@
 import React from "react";
 
 import placeholderPfp from "@/assets/imgs/webp/placeholderpfp.webp";
+import { Divider } from "@/common/components/Divider";
 import { useCSSInjection } from "@/hooks/injection";
 
 import styles from "./EBoardContent.module.css";
 import { EBoardMember } from "./EBoardMember/EBoardMember";
-import { Divider } from "@/common/components/Divider";
 
 /**
  *
