@@ -12,7 +12,9 @@ import styles from "./layout.module.css";
 const CSSGLayout = ({ children }: React.PropsWithChildren): JSX.Element => (
     <div className={styles.cssg_layout}>
         <Navbar cssOverride={styles.cssg_navbar} />
-        <div className={styles.cssg_content}>{children}</div>
+        <div className={styles.cssg_content} id="cssg_content">
+            {children}
+        </div>
     </div>
 );
 

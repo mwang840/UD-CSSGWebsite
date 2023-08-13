@@ -44,5 +44,40 @@ export const useCSSInjection = (queries: Query[]): void => {
                 }
             }
         }
+
+        return () => {
+            for (const eachQuery of queries) {
+                const foundElement = document.querySelector(
+                    eachQuery.cssQuery,
+                ) as HTMLElement | null;
+                if (foundElement !== null) {
+                    const { className, classNames, style } = eachQuery;
+
+                    if (style !== undefined) {
+                        for (const eachStyle of Object.keys(style)) {
+                            foundElement.style[eachStyle as unknown as number] =
+                                "";
+                        }
+                    }
+
+                    if (className !== undefined) {
+                        foundElement.className = foundElement.className.replace(
+                            ` ${className}`,
+                            "",
+                        );
+                    }
+
+                    if (classNames !== undefined && classNames.length > 0) {
+                        for (const eachClassName of classNames) {
+                            foundElement.className =
+                                foundElement.className.replace(
+                                    ` ${eachClassName}`,
+                                    "",
+                                );
+                        }
+                    }
+                }
+            }
+        };
     }, [queries]);
 };

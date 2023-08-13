@@ -2,3 +2,8 @@
     border: 1px solid rgba(0, 0, 0, 0.5);
     height: 75%;
 }
+
+.vertical_divider {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    width: 75%;
+}
