@@ -26,14 +26,14 @@ export const Navbar = ({ cssOverride }: NavbarProperties): JSX.Element => {
         <div className={`${styles.navbar_container} ${cssOverride}`}>
             <Link
                 className={path === NavbarPaths.HOME ? styles.active_link : ""}
-                href={`${path}/${NavbarPaths.HOME}`}
+                href={`${NavbarPaths.HOME}`}
             >
                 <CssgFormatMessage id="home" />
             </Link>
             <Divider />
             <Link
                 className={path === NavbarPaths.ABOUT ? styles.active_link : ""}
-                href={`${path}/${NavbarPaths.ABOUT}`}
+                href={`${NavbarPaths.HOME}${NavbarPaths.ABOUT}`}
             >
                 <CssgFormatMessage id="about" />
             </Link>
@@ -42,7 +42,7 @@ export const Navbar = ({ cssOverride }: NavbarProperties): JSX.Element => {
                 className={
                     path === NavbarPaths.EVENTS ? styles.active_link : ""
                 }
-                href={`${path}/${NavbarPaths.EVENTS}`}
+                href={`${NavbarPaths.HOME}${NavbarPaths.EVENTS}`}
             >
                 <CssgFormatMessage id="events" />
             </Link>
@@ -51,14 +51,14 @@ export const Navbar = ({ cssOverride }: NavbarProperties): JSX.Element => {
                 className={
                     path === NavbarPaths.EBOARD ? styles.active_link : ""
                 }
-                href={`${path}/${NavbarPaths.EBOARD}`}
+                href={`${NavbarPaths.HOME}${NavbarPaths.EBOARD}`}
             >
                 <CssgFormatMessage id="eboard" />
             </Link>
             <Divider />
             <Link
                 className={path === NavbarPaths.FAQ ? styles.active_link : ""}
-                href={`${path}/${NavbarPaths.FAQ}`}
+                href={`${NavbarPaths.HOME}${NavbarPaths.FAQ}`}
             >
                 <CssgFormatMessage id="faq" />
             </Link>
