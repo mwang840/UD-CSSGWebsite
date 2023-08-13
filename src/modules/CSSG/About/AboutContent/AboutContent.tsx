@@ -15,7 +15,9 @@ export const AboutContent = (): JSX.Element => {
 
     return (
         <>
-            <h1 className={styles.title}>{"About the club"}</h1>
+            <h1 className={styles.title}>
+                <CssgFormatMessage id="aboutTheClub" />
+            </h1>
             <div className={styles.description}>
                 <CssgFormatMessage id="aboutDescription" />
             </div>
