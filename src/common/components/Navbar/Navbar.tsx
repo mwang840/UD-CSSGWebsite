@@ -4,58 +4,63 @@ import { usePathname } from "next/navigation";
 import React from "react";
 
 import { NavbarPaths } from "@/common/constants/enums";
+import { CssgFormatMessage } from "@/lib/react-intl";
 
+import { Divider } from "../Divider";
 import styles from "./Navbar.module.css";
 
 type NavbarProperties = {
-    readonly currentLink?: string;
+    readonly cssOverride?: string;
 };
 
 /**
+ * The common navigation bar component, controls all the base navigation at the top of the page
  *
- * @param param0
- * @returns
+ * @param props - The properties of the Navbar component, comes with an override that allows for custom styles to be applied to the Navbar
+ * @returns The customized Navbar, which displays links to all pages available
  */
-export const Navbar = ({
-    currentLink: _currentLink,
-}: NavbarProperties): JSX.Element => {
+export const Navbar = ({ cssOverride }: NavbarProperties): JSX.Element => {
     const path = usePathname();
 
     return (
-        <div className={styles.navbar_container}>
+        <div className={`${styles.navbar_container} ${cssOverride}`}>
             <Link
                 className={path === NavbarPaths.HOME ? styles.active_link : ""}
-                href="/home"
+                href={`${NavbarPaths.HOME}`}
             >
-                {"Home"}
+                <CssgFormatMessage id="home" />
             </Link>
+            <Divider />
             <Link
                 className={path === NavbarPaths.ABOUT ? styles.active_link : ""}
-                href="/about"
+                href={`${NavbarPaths.HOME}${NavbarPaths.ABOUT}`}
             >
-                {"About"}
+                <CssgFormatMessage id="about" />
             </Link>
+            <Divider />
             <Link
                 className={
                     path === NavbarPaths.EVENTS ? styles.active_link : ""
                 }
-                href="/events"
+                href={`${NavbarPaths.HOME}${NavbarPaths.EVENTS}`}
             >
-                {"Events"}
+                <CssgFormatMessage id="events" />
             </Link>
+            <Divider />
             <Link
                 className={
                     path === NavbarPaths.EBOARD ? styles.active_link : ""
                 }
-                href="/eboard"
+                href={`${NavbarPaths.HOME}${NavbarPaths.EBOARD}`}
             >
-                {"Eboard"}
+                <CssgFormatMessage id="eboard" />
             </Link>
+            <Divider />
             <Link
                 className={path === NavbarPaths.FAQ ? styles.active_link : ""}
-                href="/FAQ"
+                href={`${NavbarPaths.HOME}${NavbarPaths.FAQ}`}
             >
-                {"FAQ"}
+                <CssgFormatMessage id="faq" />
             </Link>
         </div>
     );

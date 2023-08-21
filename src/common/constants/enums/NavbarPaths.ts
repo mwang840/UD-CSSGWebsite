@@ -5,5 +5,5 @@ export enum NavbarPaths {
     EVENTS = "/events",
     EBOARD = "/eboard",
     FAQ = "/faq",
-    HOME = "/home",
+    HOME = "/cssg",
 }

@@ -37,7 +37,8 @@
         "jest-formatting",
         "simple-import-sort",
         "sonarjs",
-        "unicorn"
+        "unicorn",
+        "formatjs"
     ],
     "ignorePatterns": ["*.js", "next-env.d.ts"],
     "overrides": [

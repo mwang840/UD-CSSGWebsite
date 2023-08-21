@@ -2,6 +2,7 @@
 import React from "react";
 import { Button, Form } from "react-bootstrap";
 import { useForm } from "react-hook-form";
+import { useIntl } from "react-intl";
 
 import { useBackgroundLinearGradientAnimation } from "@/hooks/color";
 
@@ -23,6 +24,7 @@ const LOGIN_DEFAULT_VALUES: LoginFormValues = {
  */
 export const LoginForm = (): JSX.Element => {
     useBackgroundLinearGradientAnimation();
+    const intl = useIntl();
 
     const { formState, register } = useForm<LoginFormValues>({
         criteriaMode: "all",
@@ -39,13 +41,13 @@ export const LoginForm = (): JSX.Element => {
                 autoComplete="off"
                 className={styles.login_form}
                 {...register("username")}
-                placeholder="Username"
+                placeholder={intl.formatMessage({ id: "username" })}
             />
             <Form.Control
                 autoComplete="off"
                 className={styles.login_form}
                 {...register("password")}
-                placeholder="Password"
+                placeholder={intl.formatMessage({ id: "password" })}
                 type="password"
             />
             <Button

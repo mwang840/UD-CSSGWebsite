@@ -61,10 +61,7 @@
     flex-direction: row;
     gap: 1em;
     width: 100%;
-}
-
-.options_bar > a {
-    width: 100%;
+    justify-content: center;
 }
 
 .landing_page_button {
@@ -77,8 +74,30 @@
     animation:
         5s 3s appear_anim ease-in-out forwards,
         1s 5s interactive_anim linear forwards;
+    padding: 1em;
+    min-width: 3.5vw;
+    max-width: 3.5vw;
+    min-height: 3.5vw;
+    max-height: 3.5vw;
+    border-radius: 100%;
+    color: black;
+    text-decoration: none;
+    background-size: 200% auto !important;
+    transition: 0.5s;
 }
 
-.landing_page_button > button {
-    width: 100%;
+.landing_page_button:hover {
+    background-position: right center;
+}
+
+.landing_page_login {
+    background: linear-gradient(90deg, #fdbb2d 0%, #22c1c3 100%);
+}
+
+.landing_page_signup {
+    background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+}
+
+.landing_page_to_home_page {
+    background: linear-gradient(90deg, #0700b8 0%, #00ff88 100%);
 }

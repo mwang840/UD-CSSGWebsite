@@ -1,0 +1,21 @@
+.eboard_content_members {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    gap: 5em;
+    padding-bottom: 5em;
+}
+
+.eboard_body_injection {
+    background-color: #9f86c0 !important;
+}
+
+.eboard_content {
+    height: fit-content;
+    max-height: 90vh;
+    display: block;
+}
+
+.eboard_divider {
+    align-self: center;
+}

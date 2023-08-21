@@ -1,0 +1,1 @@
+export { useBackgroundImageInjector } from "./useBackgroundImageInjector";

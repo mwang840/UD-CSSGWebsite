@@ -22,6 +22,12 @@ export const useBackgroundLinearGradientAnimation = (): void => {
                 const seedBottom = generateStringifiedRgbColor();
                 const randomDegree = generateRandomDegrees();
                 convertedElement.style.background = `linear-gradient(${randomDegree}deg, ${seedLeft}, ${seedRight}, ${seedTop}, ${seedBottom})`;
+                convertedElement.style.animation = "gradient 15s ease infinite";
+                convertedElement.style.setProperty(
+                    "background-size",
+                    "400% 400%",
+                    "important",
+                );
             }
         }
 
@@ -29,7 +35,9 @@ export const useBackgroundLinearGradientAnimation = (): void => {
             if (document !== undefined) {
                 const body = document.querySelector("body");
                 if (body !== null) {
-                    body.style.transition = "";
+                    body.style.background = "";
+                    body.style.animation = "";
+                    body.style.backgroundSize = "";
                 }
             }
         };

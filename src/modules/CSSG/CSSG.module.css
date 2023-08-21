@@ -1,0 +1,41 @@
+.cssg_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cssg_background {
+    background-color: #cdb4db !important;
+}
+
+.cssg_header {
+    font-size: 3em;
+    letter-spacing: 0.05em;
+    text-decoration: underline;
+}
+
+.cssg_footer {
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    align-items: center;
+}
+
+.cssg_description {
+    font-size: 1.5em;
+}
+
+.cssg_home_img {
+    width: 17vw;
+    height: 17vw;
+    border-radius: 100%;
+    border: 0.35em inset rgba(0, 0, 0, 0.95);
+}
+
+.cssg_home_img_left {
+    margin-left: 5%;
+}
+
+.cssg_home_img_right {
+    margin-right: 5%;
+}
