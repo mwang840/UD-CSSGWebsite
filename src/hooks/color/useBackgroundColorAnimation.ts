@@ -12,7 +12,7 @@ type BGAnimations = BgAnimation[];
  */
 export const useBackgroundColorAnimation = (animations: BGAnimations): void => {
     // eslint-disable-next-line no-undef, no-unused-vars -- disabled, built-in
-    const [intervalIds, setIntervalIds] = React.useState<NodeJS.Timer[]>();
+    const [intervalIds, setIntervalIds] = React.useState<NodeJS.Timeout[]>();
 
     const intervalFunction = React.useCallback((animation: BgAnimation) => {
         if (animation.randomizeColors ?? true) {
