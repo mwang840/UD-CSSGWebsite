@@ -6,6 +6,7 @@ import aman from "@/assets/imgs/jpg/amansingh.jpg";
 import benita from "@/assets/imgs/jpg/benita.jpg";
 import diya from "@/assets/imgs/jpg/diya.jpg";
 import mwang from "@/assets/imgs/jpg/mwang.jpg";
+import nicole from "@/assets/imgs/jpg/nicole.jpg";
 import sneha from "@/assets/imgs/jpg/sneha.png";
 import charmaine from "@/assets/imgs/png/charmaine.png";
 import { Divider } from "@/common/components/Divider";
@@ -55,7 +56,7 @@ export const EBoardContent = (): JSX.Element => {
             <Divider cssInjection={styles.eboard_divider} horizontal={false} />
             <EBoardMember
                 description={intl.formatMessage({ id: "secretaryDescription" })}
-                imgPath={benita.src}
+                imgPath={nicole.src}
                 name="Nicole Kinsella"
                 title="Secretary"
             />
