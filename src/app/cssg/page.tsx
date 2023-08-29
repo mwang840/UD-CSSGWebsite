@@ -1,1 +1,1 @@
-export { default } from "@/modules/CSSG/Cssg";
+export { default } from "@/modules/CSSG/CSSG";
