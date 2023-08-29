@@ -36,6 +36,7 @@
     max-height: 25vh;
     width: 50%;
     text-align: center;
+    font-weight: bold;
 }
 
 .member_align_right {

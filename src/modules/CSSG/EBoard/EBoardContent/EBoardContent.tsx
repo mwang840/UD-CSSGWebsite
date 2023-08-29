@@ -2,12 +2,11 @@
 import React from "react";
 import { useIntl } from "react-intl";
 
+import aman from "@/assets/imgs/jpg/amansingh.jpg";
 import benita from "@/assets/imgs/jpg/benita.jpg";
-import brendan from "@/assets/imgs/jpg/brendangreen.jpg";
 import diya from "@/assets/imgs/jpg/diya.jpg";
-import donovan from "@/assets/imgs/jpg/donovanmesser.jpg";
-import matt from "@/assets/imgs/jpg/mattweis.jpg";
 import mwang from "@/assets/imgs/jpg/mwang.jpg";
+import nicole from "@/assets/imgs/jpg/nicole.jpg";
 import sneha from "@/assets/imgs/jpg/sneha.png";
 import charmaine from "@/assets/imgs/png/charmaine.png";
 import { Divider } from "@/common/components/Divider";
@@ -31,44 +30,34 @@ export const EBoardContent = (): JSX.Element => {
         <div className={styles.eboard_content_members}>
             <EBoardMember
                 description={intl.formatMessage({
-                    id: "coPresidentOneDescription",
+                    id: "presidentDescription",
                 })}
                 imgPath={diya.src}
                 name="Diya Shah"
-                title="Co-President"
-            />
-            <Divider cssInjection={styles.eboard_divider} horizontal={false} />
-            <EBoardMember
-                alignRight
-                description={intl.formatMessage({
-                    id: "coPresidentTwoDescription",
-                })}
-                imgPath={brendan.src}
-                name="Brendan Green"
-                title="Co-President"
+                title="President"
             />
             <Divider cssInjection={styles.eboard_divider} horizontal={false} />
             <EBoardMember
                 description={intl.formatMessage({
                     id: "vicePresidentDescription",
                 })}
-                imgPath={donovan.src}
-                name="Donovan Messer"
+                imgPath={benita.src}
+                name="Benita Abraham"
                 title="Vice President"
             />
             <Divider cssInjection={styles.eboard_divider} horizontal={false} />
             <EBoardMember
                 alignRight
                 description={intl.formatMessage({ id: "treasurerDescription" })}
-                imgPath={matt.src}
-                name="Matt Weis"
+                imgPath={sneha.src}
+                name="Sneha Nangelimalil"
                 title="Treasurer"
             />
             <Divider cssInjection={styles.eboard_divider} horizontal={false} />
             <EBoardMember
                 description={intl.formatMessage({ id: "secretaryDescription" })}
-                imgPath={benita.src}
-                name="Benita Abraham"
+                imgPath={nicole.src}
+                name="Nicole Kinsella"
                 title="Secretary"
             />
             <Divider cssInjection={styles.eboard_divider} horizontal={false} />
@@ -83,18 +72,19 @@ export const EBoardContent = (): JSX.Element => {
             />
             <Divider cssInjection={styles.eboard_divider} horizontal={false} />
             <EBoardMember
+                alignRight
                 description={intl.formatMessage({
-                    id: "volunteerOutreachChairOneDescription",
+                    id: "projectCoordinatorDescription",
                 })}
-                imgPath={sneha.src}
-                name="Sneha Nangelimalil"
-                title="Volunteer Outreach Chair"
+                imgPath={aman.src}
+                name="Aman Singh"
+                title="Project Outreach Coordinator"
             />
             <Divider cssInjection={styles.eboard_divider} horizontal={false} />
             <EBoardMember
                 alignRight
                 description={intl.formatMessage({
-                    id: "volunteerOutreachChairTwoDescription",
+                    id: "volunteerOutreachChairDescription",
                 })}
                 imgPath={mwang.src}
                 name="Maxwell Wang"

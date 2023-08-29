@@ -1,0 +1,13 @@
+.description {
+    font-size: 1.25em;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.title {
+    font-size: 5em;
+}
+
+.FAQ_body {
+    background-color: #ffc8dd !important;
+}
