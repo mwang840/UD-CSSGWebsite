@@ -7,7 +7,7 @@ import meeting2 from "@/assets/imgs/png/meeting2.png";
 import { useCSSInjection } from "@/hooks/injection";
 import { CssgFormatMessage } from "@/lib/react-intl";
 
-import styles from "./Cssg.module.css";
+import styles from "./CSSG.module.css";
 
 /**
  *
