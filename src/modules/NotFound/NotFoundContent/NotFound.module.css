@@ -1,0 +1,13 @@
+.description {
+    font-size: 1.25em;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.title {
+    font-size: 1em;
+}
+
+.FourOhFour_body {
+    background-color: rgb(217, 2, 2) !important;
+}

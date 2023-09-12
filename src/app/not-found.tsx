@@ -1,9 +1,2 @@
-/* eslint-disable unicorn/filename-case -- disabled */
-import React from "react";
-/**
- *
- * @returns
- */
-const NotFound = (): JSX.Element => <div>{"Not Found"}</div>;
-
-export default NotFound;
+/* eslint-disable unicorn/filename-case -- disable */
+export { NotFound as default } from "@/modules/NotFound";
