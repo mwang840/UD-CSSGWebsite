@@ -1,0 +1,1 @@
+export { NotFoundContent } from "./NotFoundContent";

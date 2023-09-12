@@ -12,13 +12,15 @@ export const messages = {
         eboardMembers: "EBoard Members",
         events: "Events",
         faq: "FAQ",
-        faqDescription: "For more questions regarding the cs+sg club, we are happy to answer them!",
+        faqDescription:
+            "For more questions regarding the cs+sg club, we are happy to answer them!",
         home: "Home",
         homePageTooltip: "Home Page",
+        notFound: "Not Found (Dk daniels was here)",
         presidentDescription:
             "Meet Diya Shah, an exceptional co-president driving the Computer Science + Social Good club's mission at our college. With a strong commitment to leveraging technology for positive change, Diya seamlessly merges her technical acumen with a profound passion for societal betterment. Her strategic vision and collaborative spirit empower the club to explore innovative ways in which computer science can address pressing global challenges. Through her leadership, Diya inspires members to harness their skills for social impact, making a tangible difference within our campus community and beyond.",
         projectCoordinatorDescription:
-        "Meet Aman Singh, the hard working project coordinator of the club. With new challenges awaiting him, Aman will use his creativity to get the club hard working on projects! Projects keep the club moving for sure!",
+            "Meet Aman Singh, the hard working project coordinator of the club. With new challenges awaiting him, Aman will use his creativity to get the club hard working on projects! Projects keep the club moving for sure!",
         secretaryDescription:
             "Introducing Nicole Kinsella, the capable Secretary of the Computer Science + Social Good club at our college. With meticulous attention to detail and a passion for effective communication, Nicole keeps the club's operations running smoothly. Her organizational prowess ensures that meetings, events, and vital information are seamlessly managed, enabling the club to focus on its mission of using technology for positive social impact. Nicole's dedication to facilitating collaboration and transparent communication is integral to fostering a vibrant community of aspiring changemakers within the club.",
         socialMediaDescription:
@@ -42,13 +44,17 @@ export const messages = {
         eboardMembers: "Membres du conseil électronique",
         events: "Événements",
         faq: "FAQ",
-        faqDescription: "Pour plus de questions concernant le club cs+sg, nous serons ravis d'y répondre ",
+        faqDescription:
+            "Pour plus de questions concernant le club cs+sg, nous serons ravis d'y répondre ",
         home: "Maison",
         homePageTooltip: "Page d'accueil",
-        presidentDescription: "Rencontrez Diya Shah, une co-présidente exceptionnelle qui dirige la mission du club Computer Science + Social Good de notre collège. Avec un engagement fort à tirer parti de la technologie pour un changement positif, Diya fusionne de manière transparente son sens technique avec une profonde passion pour l'amélioration de la société. Sa vision stratégique et son esprit de collaboration permettent au club d'explorer des moyens innovants par lesquels l'informatique peut relever des défis mondiaux urgents. Grâce à son leadership, Diya inspire les membres à exploiter leurs compétences pour un impact social, faisant une différence tangible au sein de la communauté de notre campus et au-delà.",
-        projectCoordinatorDescription: "Rencontrez Aman Singh, le coordinateur de projet du club qui travaille dur. Avec de nouveaux défis qui l'attendent, Aman utilisera sa créativité pour amener le club à travailler dur sur des projets ! Les projets font avancer le club, c'est sûr !",
+        notFound: "Introuvable (Dk Daniels était ici)",
+        presidentDescription:
+            "Rencontrez Diya Shah, une co-présidente exceptionnelle qui dirige la mission du club Computer Science + Social Good de notre collège. Avec un engagement fort à tirer parti de la technologie pour un changement positif, Diya fusionne de manière transparente son sens technique avec une profonde passion pour l'amélioration de la société. Sa vision stratégique et son esprit de collaboration permettent au club d'explorer des moyens innovants par lesquels l'informatique peut relever des défis mondiaux urgents. Grâce à son leadership, Diya inspire les membres à exploiter leurs compétences pour un impact social, faisant une différence tangible au sein de la communauté de notre campus et au-delà.",
+        projectCoordinatorDescription:
+            "Rencontrez Aman Singh, le coordinateur de projet du club qui travaille dur. Avec de nouveaux défis qui l'attendent, Aman utilisera sa créativité pour amener le club à travailler dur sur des projets ! Les projets font avancer le club, c'est sûr !",
         secretaryDescription:
-        "Présentation de Nicole Kinsella, la compétente secrétaire du club Informatique + Bien Social de notre collège. Avec une attention méticuleuse aux détails et une passion pour une communication efficace, Nicole assure le bon fonctionnement des opérations du club. Ses prouesses organisationnelles garantissent que les réunions, les événements et les informations vitales sont gérées de manière transparente, permettant au club de se concentrer sur sa mission consistant à utiliser la technologie pour un impact social positif. Le dévouement de Nicole à faciliter la collaboration et la communication transparente fait partie intégrante de la promotion d'une communauté dynamique d'aspirants acteurs du changement au sein du club.",
+            "Présentation de Nicole Kinsella, la compétente secrétaire du club Informatique + Bien Social de notre collège. Avec une attention méticuleuse aux détails et une passion pour une communication efficace, Nicole assure le bon fonctionnement des opérations du club. Ses prouesses organisationnelles garantissent que les réunions, les événements et les informations vitales sont gérées de manière transparente, permettant au club de se concentrer sur sa mission consistant à utiliser la technologie pour un impact social positif. Le dévouement de Nicole à faciliter la collaboration et la communication transparente fait partie intégrante de la promotion d'une communauté dynamique d'aspirants acteurs du changement au sein du club.",
         socialMediaDescription:
             "Voici Charmaine Pasicolan, la dynamique Social Media Manager du club Computer Science + Social Good de notre collège. Avec un flair créatif et une approche stratégique, Charmaine est le fer de lance de la présence en ligne du club, amplifiant efficacement sa mission et son impact. Sa gestion habile de diverses plateformes garantit que les initiatives, les événements et les réalisations du club atteignent un public plus large, inspirant l'engagement et la participation. La capacité de Charmaine à exploiter le paysage numérique pour le bien social aide à cultiver une communauté en ligne dynamique, réunissant des personnes partageant les mêmes idées et dédiées à l'utilisation de la technologie pour un changement positif.",
         treasurerDescription:
@@ -70,11 +76,15 @@ export const messages = {
         eboardMembers: "Miembros de la junta electrónica",
         events: "Eventos",
         faq: "Preguntas más frecuentes",
-        faqDescription: "Si tienes más preguntas sobre el club cs+sg, ¡estaremos encantados de responderlas!",
+        faqDescription:
+            "Si tienes más preguntas sobre el club cs+sg, ¡estaremos encantados de responderlas!",
         home: "Hogar",
         homePageTooltip: "Página de inicio",
-        presidentDescription: "Conozca a Diya Shah, un copresidente excepcional que impulsa la misión del club Computer Science + Social Good en nuestra universidad. Con un fuerte compromiso de aprovechar la tecnología para un cambio positivo, Diya fusiona a la perfección su perspicacia técnica con una profunda pasión por el mejoramiento de la sociedad. Su visión estratégica y espíritu colaborativo capacitan al club para explorar formas innovadoras en las que la informática puede abordar desafíos globales apremiantes. A través de su liderazgo, Diya inspira a los miembros a aprovechar sus habilidades para lograr un impacto social, marcando una diferencia tangible dentro de la comunidad de nuestro campus y más allá.",
-        projectCoordinatorDescription: "Rencontrez Aman Singh, le coordinateur de projet du club qui travaille dur. Avec de nouveaux défis qui l'attendent, Aman utilisera sa créativité pour amener le club à travailler dur sur des projets ! Les projets font avancer le club, c'est sûr !",
+        notFound: "No encontrado (Dk daniels estaba aquí)",
+        presidentDescription:
+            "Conozca a Diya Shah, un copresidente excepcional que impulsa la misión del club Computer Science + Social Good en nuestra universidad. Con un fuerte compromiso de aprovechar la tecnología para un cambio positivo, Diya fusiona a la perfección su perspicacia técnica con una profunda pasión por el mejoramiento de la sociedad. Su visión estratégica y espíritu colaborativo capacitan al club para explorar formas innovadoras en las que la informática puede abordar desafíos globales apremiantes. A través de su liderazgo, Diya inspira a los miembros a aprovechar sus habilidades para lograr un impacto social, marcando una diferencia tangible dentro de la comunidad de nuestro campus y más allá.",
+        projectCoordinatorDescription:
+            "Rencontrez Aman Singh, le coordinateur de projet du club qui travaille dur. Avec de nouveaux défis qui l'attendent, Aman utilisera sa créativité pour amener le club à travailler dur sur des projets ! Les projets font avancer le club, c'est sûr !",
         secretaryDescription:
             "Presentamos a Nicole Kinsella, la competente secretaria del club Informática + Bien Social de nuestra universidad. Con meticulosa atención al detalle y pasión por la comunicación efectiva, Nicole mantiene las operaciones del club funcionando sin problemas. Su destreza organizativa garantiza que las reuniones, los eventos y la información vital se gestionen sin problemas, lo que permite al club centrarse en su misión de utilizar la tecnología para lograr un impacto social positivo. La dedicación de Nicole para facilitar la colaboración y la comunicación transparente es fundamental para fomentar una comunidad vibrante de aspirantes a agentes de cambio dentro del club.",
         socialMediaDescription:
