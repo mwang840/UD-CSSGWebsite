@@ -18,9 +18,12 @@ Upon accessing the page (third button), the user is able to see a navigational b
     User is able to see the design, know who the eboard of the club is, what events are there and what the club is
 </li>
 </ul>
-![Alt text](image.png)
-![Alt text](<Screenshot 2023-08-27 203554.png>)
-![Alt text](<Screenshot 2023-08-28 191012.png>)
+
+![Webpage](image.png)
+
+![CSSG Club](<whoIsTheclub.png>)
+
+![Eboard Members](<Eboard.png>)
 
 
 
