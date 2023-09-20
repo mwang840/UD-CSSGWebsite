@@ -21,9 +21,9 @@ Upon accessing the page (third button), the user is able to see a navigational b
 
 ![Webpage](image.png)
 
-![CSSG Club](<whoIsTheclub.png>)
+![CSSG Club](whoIsTheclub.png)
 
-![Eboard Members](<Eboard.png>)
+![Eboard Members](Eboard.png)
 
 
 
