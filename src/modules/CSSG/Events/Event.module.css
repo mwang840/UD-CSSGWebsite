@@ -1,0 +1,11 @@
+.Event_container {
+    display: flex;
+    flex-direction: column;
+    gap: 5em;
+}
+
+.Event_header {
+    font-size: 4.5em;
+    text-align: center;
+    border-bottom: 1px outset rgba(0, 0, 0, 0.5);
+}
