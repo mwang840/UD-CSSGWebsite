@@ -16,7 +16,7 @@ export const messages = {
             "For more questions regarding the cs+sg club, we are happy to answer them!",
         home: "Home",
         homePageTooltip: "Home Page",
-        notFound: "Not Found (Dk daniels was here)",
+        notFound: "Sorry, it looks like the page you tried to access is not there!",
         presidentDescription:
             "Meet Diya Shah, an exceptional co-president driving the Computer Science + Social Good club's mission at our college. With a strong commitment to leveraging technology for positive change, Diya seamlessly merges her technical acumen with a profound passion for societal betterment. Her strategic vision and collaborative spirit empower the club to explore innovative ways in which computer science can address pressing global challenges. Through her leadership, Diya inspires members to harness their skills for social impact, making a tangible difference within our campus community and beyond.",
         projectCoordinatorDescription:
